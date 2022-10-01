@@ -8,6 +8,9 @@ import GalleryCarousal from "../../components/GalleryCarousal/GalleryCarousal";
 import { useRouter } from "next/router";
 import axios from "axios";
 import Link from "next/link";
+import Loader from "../../components/Loader/Loader";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 SwiperCore.use([EffectCoverflow, Pagination]);
 
@@ -46,18 +49,27 @@ function portfolio() {
 
   return (
     <div className="">
-      {portfolioData && (
-        <div className="mx-10 p-10 slider-background rounded-md">
+      {portfolioData && !loading ? (
+        <div
+          className="mx-10 p-10 slider-background rounded-md"
+        >
           <GalleryCarousal images={portfolioData.images} />
           <div className="mt-10 flex flex-col gap-3">
             <h3 className="text-[#c4cfde] text-3xl">{portfolioData.title}</h3>
             <p>{portfolioData.description}</p>
+            <div><span className="font-bold">Technologies : {portfolioData.technologies.map((technology, index) => {
+              return <span key={index} className=''>{`${technology}, `}</span>
+            })} </span></div>
             <Link href={portfolioData.project_link} target="_blank">
               <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 w-40 hover:bg-[#18181a]">
                 View Project
               </button>
             </Link>
           </div>
+        </div>
+      ) : (
+        <div className="flex container mt-44 justify-center my-auto">
+          <Loader />
         </div>
       )}
     </div>

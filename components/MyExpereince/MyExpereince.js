@@ -11,7 +11,7 @@ function MyExpereince() {
     },
   ];
   return (
-    <div className="mt-10 p-5 flex flex-col gap-4">
+    <div className="mt-10 p-5 flex flex-col gap-4" id="my_experience">
       <p className="text-center text-[#ff014f]">OVER 2.5 YEARS OF EXPERIENCE</p>
       <h3 className="text-center text-5xl">My Experience</h3>
       <div className="mt-5 flex flex-col gap-8">

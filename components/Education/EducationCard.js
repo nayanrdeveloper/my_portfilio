@@ -1,10 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function EducationCard({ data }) {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return (
-    <div className="py-8 px-8 rounded-md shadow_1 flex gap-10 justify-between">
+    <div className="py-8 px-8 rounded-md shadow_1 flex gap-10 justify-between" data-aos="fade-up">
       <div className="flex gap-5">
         <div>
           <Image
@@ -12,7 +18,7 @@ function EducationCard({ data }) {
             width={250}
             height={150}
             alt=""
-            className="rounded-md"
+            className="rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           />
         </div>
         <div className="flex flex-col gap-3">
@@ -25,7 +31,7 @@ function EducationCard({ data }) {
         </div>
       </div>
       <div className="my-auto">
-        <Link target={"_parent"} href={data.collegeContact}><button className="p-4 shadow_1 rounded-md text-[#ff014f]">Admission</button></Link>
+        <Link target={"_parent"} href={data.collegeContact}><button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 hover:bg-[#18181a]">Admission</button></Link>
       </div>
     </div>
   );

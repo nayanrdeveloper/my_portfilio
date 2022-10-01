@@ -53,7 +53,7 @@ function Portfilio() {
         getAllPortfolios();
     },[]);
   return (
-    <div className='mt-10 p-5 flex flex-col gap-4'>
+    <div className='mt-10 p-5 flex flex-col gap-4' id='portfolio'>
         <p className='text-center text-[#ff014f]'>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
         <h3 className='text-center text-5xl text-[#c4cfde]'>My Portfolio</h3>
         <div className='mt-5 grid grid-cols-3 gap-5'>
