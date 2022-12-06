@@ -50,21 +50,35 @@ function portfolio() {
   return (
     <div className="">
       {portfolioData && !loading ? (
-        <div
-          className="mx-10 p-10 slider-background rounded-md"
-        >
+        <div className="mx-10 px-10 slider-background rounded-md">
           <GalleryCarousal images={portfolioData.images} />
           <div className="mt-10 flex flex-col gap-3">
             <h3 className="text-[#c4cfde] text-3xl">{portfolioData.title}</h3>
             <p>{portfolioData.description}</p>
-            <div><span className="font-bold">Technologies : {portfolioData.technologies.map((technology, index) => {
-              return <span key={index} className=''>{`${technology}, `}</span>
-            })} </span></div>
-            <Link href={portfolioData.project_link} target="_blank">
-              <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 w-40 hover:bg-[#18181a]">
-                View Project
-              </button>
-            </Link>
+            <div>
+              <span className="font-bold">
+                Technologies :{" "}
+                {portfolioData.technologies.map((technology, index) => {
+                  return (
+                    <span key={index} className="">{`${technology}, `}</span>
+                  );
+                })}{" "}
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <Link href={portfolioData.project_link} target="_blank">
+                <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 w-40 hover:bg-[#18181a]">
+                  GitHub
+                </button>
+              </Link>
+              {portfolioData.demo_link && (
+                <Link href={portfolioData.demo_link} target="_blank">
+                  <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 w-40 hover:bg-[#18181a]">
+                    View Project
+                  </button>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       ) : (

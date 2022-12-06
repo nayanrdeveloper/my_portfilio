@@ -5,7 +5,7 @@ function MyExpereince() {
   const experienceList = [
     {
       title: "Python (Odoo ERP) | Fronted Developer",
-      timePeriod: "2015-2020",
+      timePeriod: "2020-2022",
       image: "/experience-image-01.jpg",
       companyName: "eGrivory Technologies",
     },

@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
-          content="nayanrdeveloper,portfolio,blockchain,front-end"
+          content="nayanrdeveloper,Nayan Radadiya,portfolio,blockchain,front-end"
         />
         <meta property="og:type" content="website" />
         <meta

@@ -13,7 +13,7 @@ function Education() {
         },
         {
             degreeName : "Post Graduate Diploma in Computer Application",
-            timePeriod: "2017-2028",
+            timePeriod: "2017-2018",
             universityName : "Harivandana College",
             image : "/harivandana_College.png",
             collegeAddress: "Near, Munjka Road, Saurashtra University Campus, Rajkot, Gujarat 360005",
