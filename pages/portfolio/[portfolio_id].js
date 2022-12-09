@@ -50,7 +50,7 @@ function portfolio() {
   return (
     <div className="">
       {portfolioData && !loading ? (
-        <div className="mx-10 px-10 slider-background rounded-md">
+        <div className="mx-3 md:mx-10 px-3 md:px-10 slider-background rounded-md">
           <GalleryCarousal images={portfolioData.images} />
           <div className="mt-10 flex flex-col gap-3">
             <h3 className="text-[#c4cfde] text-3xl">{portfolioData.title}</h3>

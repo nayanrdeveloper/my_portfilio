@@ -10,8 +10,8 @@ function EducationCard({ data }) {
     AOS.refresh();
   });
   return (
-    <div className="py-8 px-8 rounded-md shadow_1 flex gap-10 justify-between" data-aos="fade-up">
-      <div className="flex gap-5">
+    <div className="py-8 px-3 md:px-8 rounded-md shadow_1 flex flex-col md:flex-row gap-10 justify-between" data-aos="fade-up">
+      <div className="flex flex-col md:flex-row gap-5">
         <div>
           <Image
             src={data.image}

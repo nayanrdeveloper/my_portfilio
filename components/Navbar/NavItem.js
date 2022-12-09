@@ -22,13 +22,12 @@ function NavItem() {
   ];
   return (
     <div className="flex">
-      <ul className="flex">
+      <ul className="flex flex-col md:flex-row">
         {navItemList.map((navItem, index) => {
           return (
             <Link key={index} href={navItem.link}>
               <li
                 className="p-2 hover:text-[#FF0003] text-[#878e99] cursor-pointer"
-                
               >
                 {navItem.name}
               </li>

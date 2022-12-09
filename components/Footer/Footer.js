@@ -18,13 +18,13 @@ function Footer() {
     },
   ];
   return (
-    <div className="mt-5 py-5 px-10 border-t border-black flex justify-between items-center">
+    <div className="mt-5 py-5 px-5 md:px-10 border-t border-black flex flex-col md:flex-row justify-between items-center">
       <div className="text-[#878e99]">
         <p className="text-2xl">
           © 2022. All rights reserved by <span className="text-[#ff014f]">Nayan Radadiya</span>
         </p>
       </div>
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3 items-center mt-3 md:mt-0">
         {socialMediaList.map((socialLink, index) => {
           return (
             <Link key={index} href={socialLink.link}>

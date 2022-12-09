@@ -1,20 +1,28 @@
-import React from 'react'
-import NavItem from './NavItem'
-import NavLogo from './NavLogo'
+import React, { useState } from "react";
+import NavItem from "./NavItem";
+import NavLogo from "./NavLogo";
+import { AiOutlineMenu } from "react-icons/ai";
 
 function Navbar() {
+  const [openNav, setOPenNav] = useState(true);
   return (
     <div>
-        <div className='flex justify-between px-10 py-5'>
-            <div className=''>
-                <NavLogo />
-            </div>
-            <div className=''>
-                <NavItem />
-            </div>
+      <div className="flex flex-col md:flex-row justify-between px-3 md:px-10 py-5 relative z-10">
+        <div className="">
+          <NavLogo />
         </div>
+        <div className="">
+          <AiOutlineMenu
+            className="md:hidden absolute right-2 top-8 text-2xl"
+            onClick={() => setOPenNav(!openNav)}
+          />
+          <div className={`duration-300 mt-4 md:mt-0 ease-linear transition-all ${openNav ? '' : 'hidden'}`}>
+            <NavItem />
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -30,11 +30,11 @@ function I_Am() {
     AOS.refresh();
   });
   return (
-    <div className="mt-5 p-5 border-b border-black" id="i_am">
-      <div className="flex gap-4">
+    <div className="mt-2 md:mt-5 p-5 border-b border-black" id="i_am">
+      <div className="flex flex-col-reverse  md:flex-row gap-4">
         <div>
           <div
-            className="p-10 flex flex-col gap-3 shadow_1 rounded-md"
+            className="p-3 md:p-10 flex flex-col gap-3 shadow_1 rounded-md"
             data-aos="fade-right"
           >
             <div className="flex gap-2">
@@ -50,23 +50,26 @@ function I_Am() {
               2+years experience Front-end &amp; Python(odoo) || JavaScript ||
               Preparation Blockchain Developer
             </p>
-            <span className="flex gap-1 text-[#c4cfde]">
-              <BsFileText className="my-auto text-[#ff014f]" />
-              Looking Intern in Front-end Blockchain Development
+            <span className="flex gap-1 items-center text-[#c4cfde]">
+              <BsFileText className="my-auto text-[#ff014f] text-2xl" />
+              <span>Looking Intern in Front-end Blockchain Development</span>
             </span>
             <span className="flex gap-1 text-[#c4cfde]">
               {" "}
-              <MdOutlineLocationOn className="my-auto text-[#ff014f]" /> Ganga
+              <MdOutlineLocationOn className="my-auto text-[#ff014f] text-2xl" /> Ganga
               Bhuvan, sardat Nagar St.-1, Jasdan, Rajkot
             </span>
             <span className="flex gap-1 text-[#c4cfde]">
               {" "}
-              <HiOutlineMail className="my-auto text-[#ff014f]" />{" "}
+              <HiOutlineMail className="my-auto text-[#ff014f] text-2xl" />{" "}
               nayanrdeveloper@gmail.com
             </span>
           </div>
-          <div className="flex gap-4">
-            <div className="flex flex-col mt-5 p-10 gap-2 shadow_1 rounded-md" data-aos="fade-left">
+          <div className="flex flex-col md:flex-row gap-4">
+            <div
+              className="flex flex-col items-center justify-center mt-5 p-10 gap-2 shadow_1 rounded-md"
+              data-aos="fade-left"
+            >
               <h3>FIND WITH ME</h3>
               <div className="flex gap-3 items-center">
                 {socialMediaList.map((socialLink, index) => {
@@ -84,11 +87,13 @@ function I_Am() {
               className="flex flex-col w-full mt-5 p-10 shadow_1 rounded-md"
               data-aos="fade-right"
             >
-              <p>Download my curriculum vitae:</p>
-              <div className="flex gap-3 mt-5">
+              <p className="text-center">Download my curriculum vitae:</p>
+              <div className="flex items-center justify-center gap-3 mt-5">
+                <Link href={'/Nayan Radadiya Resume.pdf'} target="_blank" download>
                 <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:-translate-y-1 duration-300 hover:bg-[#18181a]">
                   Download CV
                 </button>
+                </Link>
                 <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:-translate-y-1 duration-300 hover:bg-[#18181a]">
                   Contact Me
                 </button>
