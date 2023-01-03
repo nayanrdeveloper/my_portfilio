@@ -47,17 +47,20 @@ function I_Am() {
             </div>
 
             <p className="text-[#c4cfde] text-2xl">
-              2+years experience Front-end &amp; Python(odoo) || JavaScript ||
-              Preparation Blockchain Developer
+              I&apos;m a front-end developer. I have 2 years of Experience in front
+              development. I have worked with Odoo ERP-fronted (Python ERP base
+              framework) development.
+              {/* 2+years experience Front-end &amp; Python(odoo) || JavaScript ||
+              Preparation Blockchain Developer */}
             </p>
             <span className="flex gap-1 items-center text-[#c4cfde]">
               <BsFileText className="my-auto text-[#ff014f] text-2xl" />
-              <span>Looking Intern in Front-end Blockchain Development</span>
+              <span>Looking Jr.fronted developer role</span>
             </span>
             <span className="flex gap-1 text-[#c4cfde]">
               {" "}
-              <MdOutlineLocationOn className="my-auto text-[#ff014f] text-2xl" /> Ganga
-              Bhuvan, sardat Nagar St.-1, Jasdan, Rajkot
+              <MdOutlineLocationOn className="my-auto text-[#ff014f] text-2xl" />{" "}
+              Ganga Bhuvan, sardat Nagar St.-1, Jasdan, Rajkot
             </span>
             <span className="flex gap-1 text-[#c4cfde]">
               {" "}
@@ -89,10 +92,14 @@ function I_Am() {
             >
               <p className="text-center">Download my curriculum vitae:</p>
               <div className="flex items-center justify-center gap-3 mt-5">
-                <Link href={'/Nayan Radadiya Resume.pdf'} target="_blank" download>
-                <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:-translate-y-1 duration-300 hover:bg-[#18181a]">
-                  Download CV
-                </button>
+                <Link
+                  href={"/Nayan Radadiya Resume.pdf"}
+                  target="_blank"
+                  download
+                >
+                  <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:-translate-y-1 duration-300 hover:bg-[#18181a]">
+                    Download CV
+                  </button>
                 </Link>
                 <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:-translate-y-1 duration-300 hover:bg-[#18181a]">
                   Contact Me

@@ -6,8 +6,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 function Navbar() {
   const [openNav, setOPenNav] = useState(true);
   return (
-    <div>
-      <div className="flex flex-col md:flex-row justify-between px-3 md:px-10 py-5 relative z-10">
+    <div className="sticky left-0 top-0 z-50">
+      <div className="flex flex-col md:flex-row justify-between px-3 md:px-10 py-5 relative z-10 bg-[#212428] shadow_1">
         <div className="">
           <NavLogo />
         </div>

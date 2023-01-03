@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function EducationCard({ data }) {
   useEffect(() => {
@@ -10,15 +10,18 @@ function EducationCard({ data }) {
     AOS.refresh();
   });
   return (
-    <div className="py-8 px-3 md:px-8 rounded-md shadow_1 flex flex-col md:flex-row gap-10 justify-between" data-aos="fade-up">
+    <div
+      className="py-6 md:py-8 px-3 md:px-8 rounded-md shadow_1 flex flex-col md:flex-row gap-5 md:gap-10 justify-between"
+      data-aos="fade-up"
+    >
       <div className="flex flex-col md:flex-row gap-5">
-        <div>
+        <div className="relative h-44 md:h-44 w-full md:w-60">
           <Image
             src={data.image}
-            width={250}
-            height={150}
+            layout="fill"
+            object="cover"
             alt=""
-            className="rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+            className="rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 h-[30rem] w-[30rem]"
           />
         </div>
         <div className="flex flex-col gap-3">
@@ -30,8 +33,12 @@ function EducationCard({ data }) {
           <p>{data.collegeAddress}</p>
         </div>
       </div>
-      <div className="my-auto">
-        <Link target={"_parent"} href={data.collegeContact}><button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 hover:bg-[#18181a]">Admission</button></Link>
+      <div className="md:my-auto">
+        <Link target={"_parent"} href={data.collegeContact}>
+          <button className="p-4 shadow_1 rounded-md text-[#ff014f] hover:slider-background hover:-translate-y-1 duration-300 hover:bg-[#18181a]">
+            Admission
+          </button>
+        </Link>
       </div>
     </div>
   );

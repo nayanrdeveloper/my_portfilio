@@ -14,7 +14,7 @@ function NavLogo() {
           alt="my"
           className="rounded-full"
         />
-        <h1 className="text-3xl my-auto text-[#c4cfde]">Nayan</h1>
+        <h1 className="text-lg md:text-3xl my-auto text-[#c4cfde]">Nayan (Front-End developer)</h1>
       </div>
       </Link>
     </div>
