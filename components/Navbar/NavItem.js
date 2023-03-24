@@ -19,6 +19,14 @@ function NavItem() {
       name: "Portfolio",
       link: "#portfolio",
     },
+    {
+      name: "Skills",
+      link: "#skills",
+    },
+    {
+      name: "Blogs",
+      link: "#blogs",
+    },
   ];
   return (
     <div className="flex">

@@ -14,7 +14,7 @@ function ExperienceCard({data}) {
             <Image src={data.image} layout="fill" object="cover" alt="" className='rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 h-[30rem] w-[30rem]' />
         </div>
         <div className='flex flex-col gap-3'>
-            <p className='text-[#c4cfde] p-2 bg-[#545961] w-24 h-10 rounded-lg'>{data.timePeriod}</p>
+            <p className='text-[#c4cfde] p-2 bg-[#545961] w-36 text-center h-10 rounded-lg'>{data.timePeriod}</p>
             <h4 className='text-3xl text-[#c4cfde]'>{data.title}</h4>
             <p>{data.companyName}</p>
         </div>

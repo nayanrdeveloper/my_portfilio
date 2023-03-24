@@ -3,6 +3,7 @@ import BlogCard from "../components/Blog/BlogCard";
 import Education from "../components/Education/Education";
 import I_Am from "../components/I_Am/I_Am";
 import MyExpereince from "../components/MyExpereince/MyExpereince";
+import Skill from "../components/MySkills/Skill";
 import Navbar from "../components/Navbar/Navbar";
 import Portfilio from "../components/Portfilio/Portfilio";
 import styles from "../styles/Home.module.css";
@@ -54,20 +55,19 @@ export default function Home() {
     <div>
       <I_Am />
       <MyExpereince />
-      <Education />
       <Portfilio />
+      <Skill />
+      <Education />
       <section>
-        <div className="mt-10 p-5 flex flex-col gap-4" id="portfolio">
+        <div className="mt-10 p-5 flex flex-col gap-4" id="blogs">
           <p className="text-center text-[#ff014f]">
             VISIT MY BLOG AND KEEP YOUR FEEDBACK
           </p>
           <h3 className="text-center text-5xl text-[#c4cfde]">My Blog</h3>
-          <div className='mt-5 grid grid-cols-1 md:grid-cols-3 gap-5'>
-            {
-              blogList.map((blogItem) => {
-                return <BlogCard  key={blogItem.id} {...blogItem}/>
-              })
-            }
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+            {blogList.map((blogItem) => {
+              return <BlogCard key={blogItem.id} {...blogItem} />;
+            })}
           </div>
         </div>
       </section>

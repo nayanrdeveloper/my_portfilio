@@ -31,8 +31,8 @@ function I_Am() {
   });
   return (
     <div className="mt-2 md:mt-5 p-5 border-b border-black" id="i_am">
-      <div className="flex flex-col-reverse  md:flex-row gap-4">
-        <div>
+      <div className="flex flex-col-reverse md:flex-row gap-4 w-full">
+        <div className="md:w-[80%]">
           <div
             className="p-3 md:p-10 flex flex-col gap-3 shadow_1 rounded-md"
             data-aos="fade-right"
@@ -46,10 +46,11 @@ function I_Am() {
               </h2>
             </div>
 
-            <p className="text-[#c4cfde] text-2xl">
-              I&apos;m a front-end developer. I have 2 years of Experience in front
-              development. I have worked with Odoo ERP-fronted (Python ERP base
-              framework) development.
+            <p className="text-[#c4cfde]">
+              As a seasoned front-end developer, I have gained valuable
+              experience over the past few years in creating dynamic user
+              interfaces using the latest web development technologies. With a
+              solid year of expertise in both Next.js and React.js.
               {/* 2+years experience Front-end &amp; Python(odoo) || JavaScript ||
               Preparation Blockchain Developer */}
             </p>
@@ -110,13 +111,16 @@ function I_Am() {
           <div></div>
         </div>
         <div className="p-7 shadow_1 rounded-md" data-aos="fade-left">
-          <Image
-            src="/myImage.jpeg"
-            alt=""
-            height={460}
-            width={500}
-            className="rounded-md"
-          />
+          <div className="relative">
+            <Image
+              src="/myImage.jpeg"
+              alt=""
+              height={600}
+              width={500}
+              objectFit="cover"
+              className="rounded-md"
+            />
+          </div>
         </div>
       </div>
     </div>

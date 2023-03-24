@@ -29,7 +29,7 @@ function Education() {
         },
     ]
   return (
-    <div className='mt-3 md:mt-10 p-3 md:p-5 flex flex-col gap-4' id='education'>
+    <div className='mt-3 md:mt-10 p-3 md:p-5 flex flex-col gap-4 md:mx-12' id='education'>
         <p className='text-center text-[#ff014f]'>Master and Bachelor</p>
         <h3 className='text-center text-5xl'>Education</h3>
         <div className='mt-5 flex flex-col gap-8'>

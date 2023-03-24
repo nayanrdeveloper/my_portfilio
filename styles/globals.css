@@ -2,16 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap");
+
+body {
   background-color: #212428;
   color: #878e99;
+  font-family: 'Poppins', sans-serif;
 }
 
 .shadow_1 {
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
-.cardHover:hover{
+.cardHover:hover {
   background-image: linear-gradient(to right bottom, #212428, #16181c);
   background-color: #18181a;
   /* box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225; */
@@ -48,21 +51,21 @@ body{
   height: 100%;
 }
 
-.content-img{
+.content-img {
   height: 450px;
 }
 
-.couter-tile-image{
+.couter-tile-image {
   height: 120px;
   width: 120px;
 }
 
-.header-icon{
+.header-icon {
   width: 20px;
   height: 20px;
 }
 
-.slider-background{
+.slider-background {
   background-image: linear-gradient(145deg, #1e2024, #23272b);
 }
 
