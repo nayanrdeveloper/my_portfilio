@@ -67,7 +67,7 @@ function Skill() {
   return (
     <div className="mt-10 p-5 flex flex-col gap-4 md:mx-12" id="skills">
       <p className="text-center text-[#ff014f]">VISIT MY SKILL &#38; HIRE ME</p>
-      <h3 className="text-center text-5xl">My Skill</h3>
+      <h3 className="text-center text-5xl text-[#3c3e41] dark:text-[#c4cfde]">My Skill</h3>
       <div className="mt-5 grid grid-cols-3 md:grid-cols-6 gap-x-5 gap-y-5">
         {skillList.map((skillItem) => {
           return <SkillCard key={skillItem.id} {...skillItem} />;

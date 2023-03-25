@@ -2,10 +2,11 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import "../styles/globals.css";
 import Head from "next/head";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className="bg-[#ECF0F3] dark:bg-[#212428]">
       <Head>
         <meta charset="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/myImage_1.ico" />
@@ -63,9 +64,11 @@ function MyApp({ Component, pageProps }) {
         />
         <title>Nayan Radadiya Portfolio</title>
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <ThemeProvider attribute="class">
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 }

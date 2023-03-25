@@ -55,7 +55,7 @@ function Portfilio() {
   return (
     <div className='mt-10 p-5 flex flex-col gap-4' id='portfolio'>
         <p className='text-center text-[#ff014f]'>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
-        <h3 className='text-center text-5xl text-[#c4cfde]'>My Portfolio</h3>
+        <h3 className='text-center text-5xl text-[#3c3e41] dark:text-[#c4cfde]'>My Portfolio</h3>
         <div className='mt-5 grid grid-cols-1 md:grid-cols-3 gap-5'>
             {
                 portfolios.map((portfolioData, index) => {

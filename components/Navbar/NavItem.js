@@ -35,7 +35,7 @@ function NavItem() {
           return (
             <Link key={index} href={navItem.link}>
               <li
-                className="p-2 hover:text-[#FF0003] duration-300 transition transform hover:border-b ease-in text-[#878e99] cursor-pointer"
+                className="p-2 hover:text-[#FF0003] duration-300 transition transform hover:border-b ease-in text-[#0d1013] dark:text-[#878e99] cursor-pointer"
               >
                 {navItem.name}
               </li>

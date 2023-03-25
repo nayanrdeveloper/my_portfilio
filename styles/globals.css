@@ -10,9 +10,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.shadow_1 {
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-}
 
 .cardHover:hover {
   background-image: linear-gradient(to right bottom, #212428, #16181c);
