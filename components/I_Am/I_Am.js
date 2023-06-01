@@ -47,10 +47,9 @@ function I_Am() {
             </div>
 
             <p className="text-[#3c3e41] dark:text-[#c4cfde]">
-              As a seasoned front-end developer, I have gained valuable
-              experience over the past few years in creating dynamic user
-              interfaces using the latest web development technologies. With a
-              solid year of expertise in both Next.js and React.js.
+              Frontend Developer | React | Next.js | TypeScript | 🌐 Web3
+              Enthusiast | ₿ Blockchain dApps | 🏆 2x Hackathon Winner | Redux |
+              Solidity
               {/* 2+years experience Front-end &amp; Python(odoo) || JavaScript ||
               Preparation Blockchain Developer */}
             </p>
